@@ -1,0 +1,19 @@
+{
+	"name" : "mrpacket/mrpacket-connect",
+	"version" : "1.0",
+	"description" : "MRPacket Connect",
+	"authors" : [
+        {
+            "name": "MRPacket",
+            "email": "info@mrpacket.de"
+        }
+	],
+	"require" : {
+		"php" : ">=7.3.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"MRPacket\\" : "classes/MRPacket/"
+		}
+	}
+}
