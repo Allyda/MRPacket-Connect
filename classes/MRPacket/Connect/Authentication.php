@@ -49,8 +49,7 @@ class Authentication extends Call
 			throw new CrException("Failed to load endpoint via Configloader.");
 		}
 
-		/** @todo */
-		$endpoint .= 'URL_GET_TOKEN';
+		$endpoint .= '/api/login';
 		$header 			= $this->buildHttpDefaultHeaders();
 		$post				= true;
 		$outputHeader		= true;

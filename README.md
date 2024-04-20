@@ -2,7 +2,7 @@
 
 This is a PHP class library for connecting to the MRPacket API.
 
-MRPacket helps you to easily compare products from different logistics partners, print labels and perform tracking of your shipments. 
+MRPacket helps you to optimizes the shipping process of packages and making it efficient.
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 You will need a webserver and a PHP Interpreter to run the code. 
 
 System requirements: 
-- PHP 5.3 or higher
+- PHP 7.3 or higher
 - cURL library enabled
 
 You can run the provided script *"check_requirements.php"* to find out if your infrastructure is matching the conditions above.

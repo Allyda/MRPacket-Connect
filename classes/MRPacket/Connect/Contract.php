@@ -27,7 +27,7 @@ class Contract extends Call
 		}
 	}
 
-	public function create(ContractParcel $entry)
+	public function create(ContractPacket $entry)
 	{
 		$curl = new MyCurl();
 
@@ -73,8 +73,7 @@ class Contract extends Call
 			throw new CrException("Failed to load endpoint via Configloader.");
 		}
 
-		/** @todo */
-		$endpoint .= 'URL_CREATE_PACKET';
+		$endpoint .= '/api/packet';
 		$header 			= $this->buildHttpDefaultHeaders($this->token);
 		$post				= true;
 		$outputHeader		= true;
@@ -145,8 +144,7 @@ class Contract extends Call
 			throw new CrException("Failed to load endpoint via Configloader.");
 		}
 
-		/** @todo */
-		$endpoint .= 'URL_DELETE_PACKET';
+		$endpoint .= '/api/packet';
 		$header 			= $this->buildHttpDefaultHeaders($this->token);
 		$post				= true;
 		$outputHeader		= true;
