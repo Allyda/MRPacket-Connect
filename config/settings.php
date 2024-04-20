@@ -9,5 +9,5 @@
  */
 return array(
 	'build'						=> '1.0', //Don't touch! (will be used internally for User Agent setting in calls)
-	'mrpacket_server_domain'	=> 'https://mrpacket-preview.prowect.com/' //use this to switch from Staging to Live System
+	'mrpacket_server_domain'	=> ENVIRONMENT == 'DEV' ? 'https://mrpacket-preview.prowect.com/' : 'https://mrpacket.de'
 );
